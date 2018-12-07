@@ -8,5 +8,26 @@
     <artifactId>algorithms</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    
+    <properties>
+        <jdk.version>1.8</jdk.version>
+        <file.encoding>UTF-8</file.encoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <!--compiler插件-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.1</version>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                    <encoding>${file.encoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
 </project>
