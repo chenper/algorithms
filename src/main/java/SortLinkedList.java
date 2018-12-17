@@ -35,7 +35,7 @@ public class SortLinkedList {
         ListNode index = begin, cur = begin.next;
 
         while (cur != end) {
-            // index指比val小的节点， cur指比val的节点
+            // index指比val小的节点， cur指比val大的节点
             // 当发现cur比基准值val小的值的时候, cur与index后面节点交换数值
             if (cur.val < val) {
                 index = index.next;
@@ -54,7 +54,7 @@ public class SortLinkedList {
 
 
     /**
-     * 快速排序
+     * 归并排序
      *
      * @param head
      * @return
